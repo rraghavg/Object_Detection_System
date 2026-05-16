@@ -1,23 +1,7 @@
 # Hi, I'm Raghav Gupta 👋
-
-## Full Stack Developer | Problem Solver | Building AI-Powered Products
-
-I’m a Computer Science student focused on building scalable web applications, backend systems, and practical AI-integrated products.
-
-Currently exploring:
-- Full Stack Development
-- Backend Architecture
-- AI-Powered Applications
-- Product Engineering
-
----
-
-# 🚀 Tech Stack
-
-## Languages
-- Java
 - JavaScript
 - SQL
+- Python
 
 ## Frontend
 - React.js
@@ -28,14 +12,17 @@ Currently exploring:
 ## Backend
 - Node.js
 - Express.js
+- Socket.IO
 
-## Database
+## Databases
 - MongoDB
+- Supabase
 - MySQL
 
-## Tools & Platforms
+## Tools
 - Git
 - GitHub
+- Docker
 - Postman
 - Vercel
 - Render
@@ -44,42 +31,47 @@ Currently exploring:
 
 # 📌 Featured Projects
 
-## EduLink
-Smart educational and industry bridge platform for students and teachers.
+## DSA Battlefield
+Real-time coding duel platform with matchmaking, live battles, rating system, and interactive coding environment.
 
-### Features
-- Project collaboration
-- Resource sharing
-- Company recommendations
-- Domain-based filtering
+### Tech
+React • Node.js • Express • Socket.IO • Supabase
+
+---
+
+## EduLink
+Educational collaboration platform connecting students, teachers, and industry opportunities.
 
 ---
 
 ## AI Resume Analyzer
-ATS-focused resume analyzer with keyword optimization and scoring system.
-
----
-
-## Full Stack Applications
-Modern web applications with authentication, APIs, dashboards, and responsive UI.
+ATS-focused resume analyzer with keyword optimization and job-matching features.
 
 ---
 
 # 📈 Current Focus
 
-- Building production-ready projects
-- Strengthening backend development
-- Learning system design
-- Exploring AI integration in products
+- Backend Engineering
+- System Design
+- Real-Time Applications
+- AI Product Integration
+
+---
+
+# 🏆 Achievements
+
+- Winner — TechStars Startup Weekend
+- Winner — Tech Walk, TechNavya
+- President — Saturangle Debate Club
 
 ---
 
 # 📫 Contact
 
-- Email: YOUR_EMAIL
-- LinkedIn: YOUR_LINKEDIN
+- Email: raghav.gupta_cs23@gla.ac.in
 - GitHub: https://github.com/rraghavg
+- LinkedIn: www.linkedin.com/in/raghav-gupta-7492r724428
 
 ---
 
-⭐ Always building, improving, and learning.
+⭐ Building practical and scalable products.
