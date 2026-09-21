@@ -1,17 +1,21 @@
 # Dataset configuration for YOLO training
-# Paths are relative to this config file's location
-path: ../data/dataset
+# People Detection dataset from Roboflow (v12i)
+# Source: https://universe.roboflow.com/leo-ueno/people-detection-o4rdr/dataset/12
+
+path: ../People Detection.v12i.yolov8
 
 train: train/images
-val: val/images
+val: valid/images
 test: test/images
 
 # Number of classes
-nc: 4
+nc: 53
 
 # Class names
-names:
-  0: person
-  1: car
-  2: bicycle
-  3: motorcycle
+names: ['0', '1', '2', 'Bicycle', 'Bike', 'Car', 'Cyclist', 'Pedestrian', 'Pedestrians',
+        'Persona', 'Pessoa', 'Signboard', 'Stopper', 'aeroplane', 'bag', 'berdiri',
+        'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow',
+        'cyclist', 'dianzhuan', 'diningtable', 'dog', 'face', 'forklift', 'handbag',
+        'head', 'helmet', 'high', 'horse', 'jatuh', 'laptop', 'low', 'medium',
+        'motorbike', 'people', 'person', 'persons', 'pottedplant', 'refrigerator',
+        'sheep', 'sofa', 'teddy bear', 'train', 'tv', 'tvmonitor', 'vase']

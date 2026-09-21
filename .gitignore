@@ -113,3 +113,11 @@ outputs/**/*
 # Sample generated datasets
 sample_dataset/
 
+# Roboflow downloaded datasets
+People Detection.v12i.yolov8/
+
+# Ultralytics training runs
+runs/
+
+# Downloaded pretrained weights at project root
+yolov8*.pt
