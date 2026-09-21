@@ -1,0 +1,9 @@
+[tool.vercel]
+entrypoint = "app.py:app"
+
+[project]
+name = "object-detection-system"
+version = "1.0.0"
+description = "Real-Time Object Detection & Tracking System with YOLOv8 and ByteTrack"
+readme = "README.md"
+requires-python = ">=3.8"
