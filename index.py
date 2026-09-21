@@ -1,5 +1,5 @@
 """
-Vercel entrypoint app.py
+Vercel entrypoint index.py
 Imports and exposes handler, app, application from main.py.
 """
 from main import handler, app, application, HTML_PAGE, PROJECT_INFO, CLASSES

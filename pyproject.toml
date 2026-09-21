@@ -1,5 +1,5 @@
 [tool.vercel]
-entrypoint = "app.py:app"
+entrypoint = "main:app"
 
 [project]
 name = "object-detection-system"
