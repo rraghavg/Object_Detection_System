@@ -2,7 +2,7 @@
 Vercel entrypoint index.py
 Imports and exposes handler, app, application from main.py.
 """
-from main import handler, app, application, HTML_PAGE, PROJECT_INFO, CLASSES
+from main import handler, app, application, HTML_PAGE, PROJECT_INFO, CLASSES, run_yolo_detection
 
 __all__ = ['handler', 'app', 'application']
 

@@ -3,22 +3,21 @@ Vercel Serverless Function - api/index.py
 Provides both BaseHTTPRequestHandler 'handler' and WSGI 'app' / 'application'.
 """
 
-import json
-from http.server import BaseHTTPRequestHandler
+import sys
+import os
 
-# Import from main if available, otherwise define standalone
+# Ensure project root is in sys.path when bundled in api/
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+if parent_dir not in sys.path:
+    sys.path.insert(0, parent_dir)
+
 try:
     from main import handler, app, application
 except ImportError:
-    CLASSES = [
-        '0', '1', '2', 'Bicycle', 'Bike', 'Car', 'Cyclist', 'Pedestrian', 'Pedestrians',
-        'Persona', 'Pessoa', 'Signboard', 'Stopper', 'aeroplane', 'bag', 'berdiri',
-        'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow',
-        'cyclist', 'dianzhuan', 'diningtable', 'dog', 'face', 'forklift', 'handbag',
-        'head', 'helmet', 'high', 'horse', 'jatuh', 'laptop', 'low', 'medium',
-        'motorbike', 'people', 'person', 'persons', 'pottedplant', 'refrigerator',
-        'sheep', 'sofa', 'teddy bear', 'train', 'tv', 'tvmonitor', 'vase'
-    ]
+    # Fallback definition if main cannot be resolved
+    import json
+    from http.server import BaseHTTPRequestHandler
 
     class handler(BaseHTTPRequestHandler):
         def do_GET(self):
@@ -26,13 +25,7 @@ except ImportError:
             self.send_header('Content-Type', 'application/json')
             self.send_header('Access-Control-Allow-Origin', '*')
             self.end_headers()
-            data = {
-                "status": "online",
-                "service": "Object Detection & Tracking API",
-                "version": "1.0.0",
-                "classes": len(CLASSES)
-            }
-            self.wfile.write(json.dumps(data).encode('utf-8'))
+            self.wfile.write(json.dumps({"status": "online", "service": "Object Detection API"}).encode('utf-8'))
 
     def app(environ, start_response):
         start_response('200 OK', [('Content-Type', 'application/json')])
