@@ -1,0 +1,17 @@
+# Dataset configuration for YOLO training
+# Paths are relative to this config file's location
+path: ../data/dataset
+
+train: train/images
+val: val/images
+test: test/images
+
+# Number of classes
+nc: 4
+
+# Class names
+names:
+  0: person
+  1: car
+  2: bicycle
+  3: motorcycle
